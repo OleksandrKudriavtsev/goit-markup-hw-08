@@ -1,0 +1,35 @@
+.team-section {
+  background-color: $backgound-grey;
+}
+
+.team-section__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-section__pic {
+  background-color: $txt-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-section__names {
+  color: $txt-black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-section__profession {
+  margin-bottom: 16px;
+  color: $txt-grey;
+  text-align: center;
+}
+
+.team-section__description-container {
+  padding: 30px 32px;
+}

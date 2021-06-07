@@ -1,0 +1,29 @@
+.examples__photo-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.examples__photo-card-thumb {
+  position: relative;
+}
+
+.examples__photo-card-text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+}
+
+.examples__photo-card-text {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $txt-white;
+}

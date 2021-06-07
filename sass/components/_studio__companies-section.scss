@@ -1,0 +1,44 @@
+.companies-section__link-list {
+  display: flex;
+}
+
+.companies-section__item {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  border-radius: 4px;
+  border: 1px solid $companies-section__item;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.companies-section__logo {
+  display: block;
+  padding: 16px 32px;
+}
+
+.companies-section__icon-company {
+  width: 106px;
+  height: 60px;
+  fill: $grey-for-icons;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* border не ховериться при tab */
+.companies-section__item:hover,
+.companies-section__item:active,
+.companies-section__item:focus,
+.companies-section__logo:hover,
+.companies-section__logo:active,
+.companies-section__logo:focus {
+  border-color: $txt-blue;
+}
+
+.companies-section__logo:hover .companies-section__icon-company,
+.companies-section__logo:active .companies-section__icon-company,
+.companies-section__logo:focus .companies-section__icon-company {
+  fill: $txt-blue;
+}

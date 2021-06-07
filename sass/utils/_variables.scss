@@ -1,0 +1,62 @@
+$background-dark: #2f303a;
+$backgound-grey: #f5f4fa;
+$txt-white: #ffffff;
+$txt-grey: #757575;
+$txt-blue: #2196f3;
+$txt-black: #212121;
+$borderline: #ececec;
+$companies-section__item: #afb1b8;
+$submit-btn-hover: #188ce8;
+$background-img-layer: #c4c4c4;
+$grey-for-icons: #afb1b8;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.body {
+  font-family: roboto, sans-serif;
+  color: $txt-black;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}

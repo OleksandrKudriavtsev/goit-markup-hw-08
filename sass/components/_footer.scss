@@ -1,0 +1,106 @@
+.footer {
+  background-color: $background-dark;
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__info-container {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.footer__adress-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.footer__adress-link {
+  font-style: normal;
+  line-height: 1.71;
+  margin-bottom: 9px;
+  color: $txt-white;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--grey {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $txt-blue;
+  }
+}
+
+.footer__socials-container {
+  display: inline-block;
+  margin-right: 93px;
+}
+
+.footer__heading {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $txt-white;
+}
+
+.footer__input-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__mail-input-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $txt-white;
+}
+
+.footer__input-field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  padding-left: 16px;
+  color: $txt-white;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__btn-container {
+  align-self: flex-end;
+}
+
+.btn__telegram-plane-svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
