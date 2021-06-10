@@ -73,12 +73,12 @@
   &--accent {
     fill: $txt-white;
   }
-}
 
-.social-webs-link:hover .icon-social-web,
-.social-webs-link:active .icon-social-web,
-.social-webs-link:focus .icon-social-web {
-  fill: $txt-white;
+  .social-webs-link:hover &,
+  .social-webs-link:active &,
+  .social-webs-link:focus & {
+    fill: $txt-white;
+  }
 }
 
 .submit-btn {
