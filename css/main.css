@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* utils */
 *,
 *::before,
 *::after {
@@ -44,6 +45,8 @@ a {
   clip: rect(0 0 0 0);
 }
 
+/* common */
+/* sections */
 .body {
   font-family: roboto, sans-serif;
   color: #212121;
@@ -64,6 +67,7 @@ a {
   margin-right: auto;
 }
 
+/* logo */
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -81,6 +85,7 @@ a {
   font-weight: 700;
 }
 
+/* webs-link */
 .list-of-socail-webs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +149,15 @@ a {
   fill: #ffffff;
 }
 
+/* other */
+.common-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .submit-btn {
   padding: 10px 32px;
   background: #2196f3;
@@ -202,12 +216,13 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.common-heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
+.burger-menu-btn {
+  padding: 0;
+}
+
+.burger-menu-svg {
+  width: 24px;
+  height: 16px;
 }
 
 .header {
@@ -494,6 +509,7 @@ a {
   margin-left: 10px;
 }
 
+/* page-sections */
 .hero-section {
   background: #2f303a;
   height: 600px;
