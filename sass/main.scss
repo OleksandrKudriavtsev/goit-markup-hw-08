@@ -1,7 +1,13 @@
+/* utils */
 @import './utils/variables';
+@import './utils/basic-reset';
+@import './utils/mixins';
+/* common */
+@import './components/buttons';
 @import './components/common-elements';
 @import './components/header';
 @import './components/footer';
+/* page-sections */
 @import './components/studio__hero-section';
 @import './components/studio__central-section--list';
 @import './components/studio__central-Section--examples';
@@ -9,6 +15,3 @@
 @import './components/studio__companies-section';
 @import './components/studio__modal-part';
 @import './components/portfolio';
-
-@import './utils/basic-reset';
-@import './utils/mixins';
