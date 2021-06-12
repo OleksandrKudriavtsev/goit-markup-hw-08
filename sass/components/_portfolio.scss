@@ -65,9 +65,9 @@
   transform: translateY(100%);
   overflow: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .portfolio-gallery__link:hover &,
-  .portfolio-gallery__link:focus & {
-    transform: translateY(0%);
-  }
+.portfolio-gallery__link:hover .portfoilo-gallery__overlay-text,
+.portfolio-gallery__link:focus .portfoilo-gallery__overlay-text {
+  transform: translateY(0%);
 }

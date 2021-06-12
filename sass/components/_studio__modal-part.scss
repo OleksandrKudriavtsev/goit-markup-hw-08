@@ -189,37 +189,34 @@
   width: 12px;
   height: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  .input-row:hover + &,
-  .input-row:active + &,
-  .input-row:focus + & {
-    fill: $txt-blue;
-  }
 }
 
 .input-phone {
   width: 13px;
   height: 13px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  .input-row:hover + &,
-  .input-row:active + &,
-  .input-row:focus + & {
-    fill: $txt-blue;
-  }
 }
 
 .input-mail {
   width: 15px;
   height: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover,
-  .input-row:hover + &,
-  .input-row:active + &,
-  .input-row:focus + & {
-    fill: $txt-blue;
-  }
+.input-row:hover + .input-person,
+.input-row:active + .input-person,
+.input-row:focus + .input-person,
+.input-row:hover + .input-phone,
+.input-row:active + .input-phone,
+.input-row:focus + .input-phone,
+.input-row:hover + .input-mail,
+.input-row:active + .input-mail,
+.input-row:focus + .input-mail {
+  fill: $txt-blue;
+}
+
+.input-person:hover,
+.input-phone:hover,
+.input-mail:hover {
+  fill: $txt-blue;
 }
