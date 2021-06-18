@@ -17,14 +17,6 @@
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <title>Студия</title>
-    <style>
-      .body {
-        font-family: roboto, sans-serif;
-        color: var(--txt-black);
-        font-size: 14px;
-        letter-spacing: 0.03em;
-      }
-    </style>
   </head>
   <body class="body">
     <!------------------------------- Header Section ------------------------------->
@@ -33,8 +25,15 @@
         <div class="header-logo-container header-logo-container--margin">
           <a href="./index.html" class="logo"><span class="half-logo">Web</span>Studio</a>
         </div>
+        <button data-mobile-menu-open type="button" class="burger-menu-btn burger-menu-btn--margin">
+          <svg class="burger-menu-svg">
+            <use href="./images/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
         <nav>
-          <ul class="header-section__list header-section__list--margin">
+          <ul
+            class="header-section__list header-section__list--margin header-section__list--hidden"
+          >
             <li class="header-section__item">
               <a href="./index.html" class="header-section__links current header__blue-line"
                 >Студия</a
@@ -48,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-section__list header-section__list--margin">
+        <ul class="header-section__list header-section__list--margin header-section__list--hidden">
           <li class="header-section__item">
             <a href="mailto:info@devstudio.com" class="header-section__links-grey">
               <svg class="mail-svg">
@@ -127,48 +126,50 @@
       </section>
       <!------------------------------- Central Section - Examples ------------------------------->
       <section class="section examples">
-        <h2 class="common-heading">Чем мы занимаемся</h2>
-        <ul class="container examples__photo-list">
-          <li class="examples__photo-card">
-            <div class="examples__photo-card-thumb">
-              <img
-                src="./images/img1-jpeg-squoshed.jpg"
-                alt="работа с компьютером"
-                width="370"
-                height="294"
-              />
-              <div class="examples__photo-card-text-container">
-                <p class="examples__photo-card-text">Десктопные приложения</p>
+        <div class="container">
+          <h2 class="common-heading">Чем мы занимаемся</h2>
+          <ul class="examples__photo-list">
+            <li class="examples__photo-card">
+              <div class="examples__photo-card-thumb">
+                <img
+                  src="./images/img1-jpeg-squoshed.jpg"
+                  alt="работа с компьютером"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples__photo-card-text-container">
+                  <p class="examples__photo-card-text">Десктопные приложения</p>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="examples__photo-card">
-            <div class="examples__photo-card-thumb">
-              <img
-                src="./images/img2-jpeg-squoshed.jpg"
-                alt="работа с телефоном"
-                width="370"
-                height="294"
-              />
-              <div class="examples__photo-card-text-container">
-                <p class="examples__photo-card-text">Мобильные приложения</p>
+            </li>
+            <li class="examples__photo-card">
+              <div class="examples__photo-card-thumb">
+                <img
+                  src="./images/img2-jpeg-squoshed.jpg"
+                  alt="работа с телефоном"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples__photo-card-text-container">
+                  <p class="examples__photo-card-text">Мобильные приложения</p>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="examples__photo-card">
-            <div class="examples__photo-card-thumb">
-              <img
-                src="./images/img3-jpeg-squoshed.jpg"
-                alt="работа с планшетом"
-                width="370"
-                height="294"
-              />
-              <div class="examples__photo-card-text-container">
-                <p class="examples__photo-card-text">Дизайнерские решения</p>
+            </li>
+            <li class="examples__photo-card">
+              <div class="examples__photo-card-thumb">
+                <img
+                  src="./images/img3-jpeg-squoshed.jpg"
+                  alt="работа с планшетом"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples__photo-card-text-container">
+                  <p class="examples__photo-card-text">Дизайнерские решения</p>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
       <!------------------------------- Team Section ------------------------------->
       <section class="team-section section">
@@ -485,6 +486,70 @@
         </form>
       </div>
     </footer>
+    <!------------------------------- Header Modal Part ------------------------------->
+    <div data-mobile-menu class="header_mobile-menu backdrop is-hidden">
+      <button
+        data-mobile-menu-close
+        type="button"
+        class="mobile-menu_close"
+        aria-label="Мобильное меню"
+      >
+        <svg class="mobile-menu_close-svg">
+          <use href="./images/sprite.svg#icon-mobile-menu-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="header-section__list header-section__list--margin">
+          <li class="header-section__item">
+            <a
+              href="./index.html"
+              class="header-section__links header-section__links--modal current header__blue-line"
+              >Студия</a
+            >
+          </li>
+          <li class="header-section__item">
+            <a href="./portfolio.html" class="header-section__links header-section__links--modal"
+              >Портфолио</a
+            >
+          </li>
+          <li class="header-section__item">
+            <a href="" class="header-section__links header-section__links--modal">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-section__list header-section__list--modal header-section__list--reverse">
+        <li class="header-section__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="header-section__links-grey header-section__links-grey--mail"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="header-section__item">
+          <a
+            href="tel:+380961111111"
+            class="header-section__links-grey header-section__links-grey--modal"
+          >
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <ul class="header-modal__social-webs-list">
+        <li class="header-modal__social-webs-item">
+          <a class="header-modal__social-webs-link">Instagram</a>
+        </li>
+        <li class="header-modal__social-webs-item">
+          <a class="header-modal__social-webs-link">Twitter</a>
+        </li>
+        <li class="header-modal__social-webs-item">
+          <a class="header-modal__social-webs-link">Facebook</a>
+        </li>
+        <li class="header-modal__social-webs-item">
+          <a class="header-modal__social-webs-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!------------------------------- Modal Part ------------------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
@@ -543,5 +608,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

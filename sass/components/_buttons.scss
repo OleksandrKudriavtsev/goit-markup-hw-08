@@ -53,10 +53,29 @@
 }
 
 .burger-menu-btn {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+  background-color: transparent;
+  border: none;
   padding: 0;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $txt-blue;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .burger-menu-svg {
   width: 24px;
   height: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

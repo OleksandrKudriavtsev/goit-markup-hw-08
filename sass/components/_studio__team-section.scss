@@ -3,9 +3,14 @@
 }
 
 .team-section__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .team-section__pic {

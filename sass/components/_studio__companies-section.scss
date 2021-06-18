@@ -1,17 +1,41 @@
 .companies-section__link-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .companies-section__item {
-  width: 170px;
-  height: 92px;
-  margin-right: 30px;
-  border-radius: 4px;
-  border: 1px solid $companies-section__item;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 480px) {
+    &:nth-child(2n + 0) {
+      margin-right: 0;
+    }
+  }
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border: 1px solid $companies-section__item;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+      margin-right: 30px;
+      border-radius: 4px;
+      border: 1px solid $companies-section__item;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 

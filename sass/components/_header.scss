@@ -3,15 +3,30 @@
   position: relative;
   align-items: center;
   border-bottom: 1px solid $borderline;
+  overflow: hidden;
 }
 
 .header-logo-container {
   display: flex;
   align-items: center;
 
-  &--margin {
-    margin-right: 92px;
+  @media screen and (min-width: 1200px) {
+    &--margin {
+      margin-right: 93px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
   }
+
+  @media screen and (min-width: 480px) {
+    &--margin {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.burger-menu-btn--margin {
 }
 
 .header-section {
@@ -19,90 +34,136 @@
 }
 
 .header-section__list {
-  display: flex;
+  @media screen and (max-width: 480px) {
+    &--reverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
-  &--margin {
-    margin-left: auto;
-  }
-}
-
-.header-section__item {
-  margin-right: 50px;
-  list-style: none;
-  padding-top: 32px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.header-section__links {
-  display: flex;
-  position: relative;
-  padding-bottom: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $txt-black;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $txt-blue;
-  }
-}
-
-.header-section__links-grey {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $txt-grey;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $txt-blue;
+    &--margin {
+      margin-left: 40px;
+      margin-top: 48px;
+      margin-bottom: 302px;
+    }
   }
 
-  &:hover .mail-svg,
-  &:focus .mail-svg,
-  &:hover .phone-svg,
-  &:focus .phone-svg {
-    fill: $txt-blue;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    &--margin {
+      margin-left: auto;
+    }
   }
-}
 
-.mail-svg {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: $grey-for-icons;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &--hidden {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 
-.phone-svg {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: $grey-for-icons;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .header-section__item {
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+      list-style: none;
+      padding-top: 32px;
 
-.header-section__links.current {
-  color: $txt-blue;
-}
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 
-.header__blue-line.current:after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  border-bottom: 4px solid $txt-blue;
+  .header-section__links {
+    display: flex;
+    position: relative;
+    padding-bottom: 28px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $txt-black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $txt-blue;
+    }
+  }
+
+  .header-section__links-grey {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $txt-grey;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $txt-blue;
+    }
+
+    &:hover .mail-svg,
+    &:focus .mail-svg,
+    &:hover .phone-svg,
+    &:focus .phone-svg {
+      fill: $txt-blue;
+    }
+
+    &--modal {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      margin-bottom: 32px;
+      color: $txt-blue;
+    }
+
+    @media screen and (max-width: 767px) {
+      &--mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: $txt-grey;
+      }
+    }
+  }
+
+  .mail-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $grey-for-icons;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .phone-svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $grey-for-icons;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-section__links.current {
+    @media screen and (min-width: 768px) {
+      color: $txt-blue;
+    }
+  }
+
+  .header__blue-line.current:after {
+    @media screen and (min-width: 768px) {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      border-bottom: 4px solid $txt-blue;
+    }
+  }
 }
