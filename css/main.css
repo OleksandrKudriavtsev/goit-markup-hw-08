@@ -654,6 +654,18 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -664,6 +676,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer__info-container {
+    display: inline-block;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .footer__info-container {
     display: inline-block;
     margin-right: 70px;
@@ -752,6 +771,21 @@ a {
   }
 }
 
+@media screen and (min-width: 766px) {
+  .footer__input-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__input-container {
     display: -webkit-box;
@@ -765,7 +799,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -860,6 +894,18 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer__btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .footer__btn-container {
     -ms-flex-item-align: end;
         align-self: flex-end;
