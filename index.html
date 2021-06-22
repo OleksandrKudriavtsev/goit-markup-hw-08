@@ -138,12 +138,27 @@
           <ul class="examples__photo-list">
             <li class="examples__photo-card">
               <div class="examples__photo-card-thumb">
-                <img
-                  src="./images/img1-jpeg-squoshed.jpg"
-                  alt="работа с компьютером"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/index-img1-webp.webp    1x,
+                      ./images/desktop/index-img1@2x-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/desktop/index-img1.jpeg    1x,
+                      ./images/desktop/index-img1@2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/desktop/index-img1.jpg"
+                    alt="работа с компьютером"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="examples__photo-card-text-container">
                   <p class="examples__photo-card-text">Десктопные приложения</p>
                 </div>
@@ -151,12 +166,28 @@
             </li>
             <li class="examples__photo-card">
               <div class="examples__photo-card-thumb">
-                <img
-                  src="./images/img2-jpeg-squoshed.jpg"
-                  alt="работа с телефоном"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/index-img2-webp.webp    1x,
+                      ./images/desktop/index-img2@2x-webp.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/index-img2.jpg    1x,
+                      ./images/desktop/index@2x-img2.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/desktop/index-img2.jpg"
+                    alt="работа с телефоном"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="examples__photo-card-text-container">
                   <p class="examples__photo-card-text">Мобильные приложения</p>
                 </div>
@@ -164,12 +195,27 @@
             </li>
             <li class="examples__photo-card">
               <div class="examples__photo-card-thumb">
-                <img
-                  src="./images/img3-jpeg-squoshed.jpg"
-                  alt="работа с планшетом"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/index-img3-webp.webp    1x,
+                      ./images/desktop/index-img3@2x-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/desktop/index-img3.jpg    1x,
+                      ./images/desktop/index-img3@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/desktop/index-img3.jpg"
+                    alt="работа с планшетом"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="examples__photo-card-text-container">
                   <p class="examples__photo-card-text">Дизайнерские решения</p>
                 </div>
@@ -185,7 +231,48 @@
           <ul class="team-section__list">
             <div class="team-section__pic">
               <li class="team-section__item">
-                <img src="./images/mobile/igor-mobile.jpg" alt="Игорь Демьяненко" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/igor-mobile-webp.webp    1x,
+                      ./images/mobile/igor@2x-mobile-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/mobile/igor-mobile.jpg    1x,
+                      ./images/mobile/igor@2x-mobile.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/igor-tablet-webp.webp    1x,
+                      ./images/tablet/igor@2x-tablet-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/tablet/igor-tablet.jpg    1x,
+                      ./images/tablet/igor@2x-tablet.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/igor-desktop-webp.webp    1x,
+                      ./images/desktop/igor@2x-desktop-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/desktop/igor-desktop.jpg    1x,
+                      ./images/desktop/igor@2x-desktop.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/mobile/igor-mobile.jpg" alt="Игорь Демьяненко" />
+                </picture>
                 <div class="team-section__description-container">
                   <h3 class="team-section__names">Игорь Демьяненко</h3>
                   <p class="team-section__profession" lang="en">Product Designer</p>
@@ -224,7 +311,48 @@
             </div>
             <div class="team-section__pic">
               <li class="team-section__item">
-                <img src="./images/mobile/olga-mobile.jpg" alt="Ольга Репина" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/olga-mobile-webp.webp    1x,
+                      ./images/mobile/olga@2x-mobile-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/mobile/olga-mobile.jpg    1x,
+                      ./images/mobile/olga@2x-mobile.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/olga-tablet-webp.webp    1x,
+                      ./images/tablet/olga@2x-tablet-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/tablet/olga-tablet.jpg    1x,
+                      ./images/tablet/olga@2x-tablet.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/olga-desktop-webp.webp    1x,
+                      ./images/desktop/olga@2x-desktop-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/desktop/olga-desktop.jpg    1x,
+                      ./images/desktop/olga@2x-desktop.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/mobile/olga-mobile.jpg" alt="Ольга Репина" />
+                </picture>
                 <div class="team-section__description-container">
                   <h3 class="team-section__names">Ольга Репина</h3>
                   <p class="team-section__profession" lang="en">Frontend Developer</p>
@@ -263,7 +391,49 @@
             </div>
             <div class="team-section__pic">
               <li class="team-section__item">
-                <img src="./images/mobile/nikolay-mobile.jpg" alt="Николай Тарасов" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/nikolay-mobile-webp.webp    1x,
+                      ./images/mobile/nikolay@2x-mobile-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/mobile/nikolay-mobile.jpg    1x,
+                      ./images/mobile/nikolay@2x-mobile.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/nikolay-tablet-webp.webp    1x,
+                      ./images/tablet/nikolay@2x-tablet-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/tablet/nikolay-tablet.jpg    1x,
+                      ./images/tablet/nikolay@2x-tablet.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/nikolay-desktop-webp.webp    1x,
+                      ./images/desktop/nikolay@2x-desktop-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/desktop/nikolay-desktop.jpg    1x,
+                      ./images/desktop/nikolay@2x-desktop.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/mobile/nikolay-mobile.jpg" alt="Николай Тарасов" />
+                </picture>
+
                 <div class="team-section__description-container">
                   <h3 class="team-section__names">Николай Тарасов</h3>
                   <p class="team-section__profession" lang="en">Marketing</p>
@@ -302,7 +472,49 @@
             </div>
             <div class="team-section__pic">
               <li class="team-section__item">
-                <img src="./images/mobile/mikhail-mobile.jpg" alt="Михаил Ермаков" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mobile/mikhail-mobile-webp.webp    1x,
+                      ./images/mobile/mikhail@2x-mobile-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/mobile/mikhail-mobile.jpg    1x,
+                      ./images/mobile/mikhail@2x-mobile.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/mikhail-tablet-webp.webp    1x,
+                      ./images/tablet/mikhail@2x-tablet-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/tablet/mikhail-tablet.jpg    1x,
+                      ./images/tablet/mikhail@2x-tablet.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/mikhail-desktop-webp.webp    1x,
+                      ./images/desktop/mikhail@2x-desktop-webp.webp 2x
+                    "
+                    type="image/webp"
+                    srcset="
+                      ./images/desktop/mikhail-desktop.jpg    1x,
+                      ./images/desktop/mikhail@2x-desktop.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/mobile/mikhail-mobile.jpg" alt="Михаил Ермаков" />
+                </picture>
+
                 <div class="team-section__description-container">
                   <h3 class="team-section__names">Михаил Ермаков</h3>
                   <p class="team-section__profession" lang="en">UI Designer</p>
