@@ -87,13 +87,13 @@
 
 /* webs-link */
 .list-of-socail-webs {
+  display: flex;
+
   @media screen and (max-width: 767px) {
-    display: flex;
     justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -150,8 +150,8 @@
 .common-heading {
   @media screen and (max-width: 1199px) {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     margin-bottom: 30px;
   }

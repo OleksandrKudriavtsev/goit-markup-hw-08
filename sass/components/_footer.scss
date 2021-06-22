@@ -15,7 +15,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: baseline;
     justify-content: space-between;
   }
@@ -28,7 +27,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: inline-block;
     margin-right: 70px;
   }
 }
@@ -41,10 +39,6 @@
 
   &:last-child {
     margin-bottom: 0px;
-  }
-
-  @media screen and (max-width: 767px) {
-    /*margin-bottom: 60px;*/
   }
 }
 
@@ -72,9 +66,6 @@
 }
 
 .footer__socials-container {
-  @media screen and (max-width: 767px) {
-  }
-
   @media screen and (min-width: 1200px) {
     display: inline-block;
     margin-right: 93px;
@@ -120,33 +111,21 @@
 }
 
 .footer__form {
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .footer__mail-input-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $txt-white;
+
   @media screen and (max-width: 767px) {
     display: block;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: $txt-white;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: $txt-white;
   }
 }
 
