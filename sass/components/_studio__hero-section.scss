@@ -44,8 +44,16 @@
     background-size: cover;
     height: 400px;
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+
+    /*
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero-section__background-image {
+        background-image: url('../../images/mobile/hero-mobile@2x.jpg');
+      }
+    }
+    */
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -56,8 +64,6 @@
     background-size: cover;
     height: 400px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -68,8 +74,6 @@
     background-size: cover;
     height: 600px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
