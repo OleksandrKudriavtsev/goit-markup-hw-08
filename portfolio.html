@@ -291,6 +291,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
+                      webp
                     />
                     <source
                       srcset="
@@ -711,69 +712,62 @@
         </form>
       </div>
     </footer>
-    <!------------------------------- Header Modal Part ------------------------------->
-    <div data-mobile-menu class="header_mobile-menu backdrop is-hidden">
-      <button
-        data-mobile-menu-close
-        type="button"
-        class="mobile-menu_close"
-        aria-label="Мобильное меню"
-      >
-        <svg class="mobile-menu_close-svg">
-          <use href="./images/sprite.svg#icon-mobile-menu-close"></use>
-        </svg>
-      </button>
-      <nav>
-        <ul class="header-section__list header-section__list--margin">
-          <li class="header-section__item">
-            <a
-              href="./index.html"
-              class="header-section__links header-section__links--modal current header__blue-line"
-              >Студия</a
-            >
-          </li>
-          <li class="header-section__item">
-            <a href="./portfolio.html" class="header-section__links header-section__links--modal"
-              >Портфолио</a
-            >
-          </li>
-          <li class="header-section__item">
-            <a href="" class="header-section__links header-section__links--modal">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-section__list header-section__list--modal header-section__list--reverse">
-        <li class="header-section__item">
-          <a
-            href="mailto:info@devstudio.com"
-            class="header-section__links-grey header-section__links-grey--mail"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="header-section__item">
-          <a
-            href="tel:+380961111111"
-            class="header-section__links-grey header-section__links-grey--modal"
-          >
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-      <ul class="header-modal__social-webs-list">
-        <li>
-          <a class="header-modal__social-webs-link">Instagram</a>
-        </li>
-        <li class="header-modal__social-webs-item">
-          <a class="header-modal__social-webs-link">Twitter</a>
-        </li>
-        <li class="header-modal__social-webs-item">
-          <a class="header-modal__social-webs-link">Facebook</a>
-        </li>
-        <li class="header-modal__social-webs-item">
-          <a class="header-modal__social-webs-link">LinkedIn</a>
-        </li>
-      </ul>
+    <!------------------------------- Modal Part ------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button data-modal-close type="button" class="modal-window__close-btn">
+          <svg class="icon-close">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <b class="modal-window__heading">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="input-form">
+          <label class="input-form-label" for="user-name">Имя</label>
+          <div class="input-position-div">
+            <input class="input-row" type="text" name="name" id="user-name" required />
+            <svg class="input-person">
+              <use href="./images/sprite.svg#icon-input-1"></use>
+            </svg>
+          </div>
+          <label class="input-form-label" for="tel">Телефон</label>
+          <div class="input-position-div">
+            <input class="input-row" type="tel" name="user-phone" id="tel" required />
+            <svg class="input-phone">
+              <use href="./images/sprite.svg#icon-input-2"></use>
+            </svg>
+          </div>
+          <label class="input-form-label" for="email">Почта</label>
+          <div class="input-position-div">
+            <input class="input-row" type="email" name="user-email" id="email" required />
+            <svg class="input-mail">
+              <use href="./images/sprite.svg#icon-input-3"></use>
+            </svg>
+          </div>
+          <label class="input-form-label" for="feedback">Комментарий</label>
+          <textarea
+            class="input-box"
+            name="user-feedback"
+            placeholder="Введите текст"
+            id="feedback"
+          ></textarea>
+          <form class="checkbox-form">
+            <label class="checkbox-label">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="user-checkbox"
+                value="agreed-for-mail"
+              />
+              <span class="checkbox-icon"></span>
+              <p class="check-box-text">Соглашаюсь с рассылкой и принимаю</p>
+              <a href="" class="check-box-text-blue">Условия договора</a>
+            </label>
+          </form>
+        </form>
+        <div class="modal-btn-div">
+          <button class="submit-btn submit-form-btn" type="submit">Отправить</button>
+        </div>
+      </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
